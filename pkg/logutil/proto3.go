@@ -28,7 +28,7 @@ import (
 
 // This file contains a few functions to help with proto3.
 
-// ProtoToTime converts a vttimepb.Time to a time.Time.
+// ProtoToTime converts a loggerpb.Time to a time.Time.
 // proto3 will eventually support timestamps, at which point we'll retire
 // this.
 //
@@ -41,7 +41,7 @@ func ProtoToTime(ts *loggerpb.Time) time.Time {
 	return time.Unix(ts.Seconds, int64(ts.Nanoseconds)).UTC()
 }
 
-// TimeToProto converts the time.Time to a vttimepb.Time.
+// TimeToProto converts the time.Time to a loggerpb.Time.
 func TimeToProto(t time.Time) *loggerpb.Time {
 	seconds := t.Unix()
 	nanos := int64(t.Sub(time.Unix(seconds, 0)))
