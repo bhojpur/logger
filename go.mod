@@ -4,6 +4,9 @@ go 1.17
 
 require (
 	github.com/bhojpur/events v0.0.2
+	github.com/cloudflare/golz4 v0.0.0-20150217214814-ef862a3cdc58
+	github.com/elastic/go-elasticsearch/v6 v6.8.10
+	github.com/gogo/protobuf v1.3.2
 	github.com/lib/pq v1.10.4
 	github.com/pkg/errors v0.9.1
 	github.com/shiena/ansicolor v0.0.0-20200904210342-c7312218db18
@@ -21,7 +24,6 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/docker/spdystream v0.1.0 // indirect
 	github.com/go-logr/logr v1.2.2 // indirect
-	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
